@@ -12,8 +12,8 @@
 
 :root {
   --text-color: white;
-  --hover-color: #06d5fa;
-  --bg-color: #808080;
+  --hover-color: #00ABE4;
+  --bg-color: #01257D;
   --second-bg-color: #635050;
   --bg-font: 2.5rem;
   --normal-font: 2rem;
@@ -494,6 +494,14 @@ section {
   font-size: 1.5rem;
 }
 
+.service-box .service-offered {
+  color: var(--hover-color);
+}
+
+.service-box ul {
+color: var(--text-color);
+}
+
 /* =========== learn more =======  */
 #check {
   display: none;
@@ -848,7 +856,8 @@ text-align: justify;
   width: 100%;
   height: 100%;
   opacity: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), #12f7ff);
+  background: linear-gradient(rgb(23, 20, 48), rgb(2, 94, 79));
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
