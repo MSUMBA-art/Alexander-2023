@@ -426,7 +426,125 @@ section {
     border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
   }
 }
+
 /* ======== ABOUT SECTION END HERE =========  */
+
+/* =========== QUALIFICATION SECTION STAR HERE =========  */
+.section {
+  padding: 6.5rem 0 2rem;
+}
+
+.qualification h2 {
+  text-align: center;
+  font-weight: 700px;
+  font-size: var(--normal-font);
+  color: var(--hover-color);
+  margin-bottom: 4rem;
+}
+
+.container2 {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.qualification-container {
+  grid-template-columns: repeat(2, 340px);
+  gap: 3rem;
+  justify-content: center;
+  background-color: var(--second-bg-color);
+}
+
+.qualification-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--hover-color);
+}
+
+.qualification-title i {
+  color: white;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item::before {
+  content: '';
+  width: 1px;
+  position: absolute;
+  left: 0.48rem;
+  top: 0;
+  height: 100%;
+  background-color: var(--hover-color);
+}
+
+.circle-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1rem;
+  width: 1rem;
+  border: 2.3px solid var(--text-color);
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  transition: 0.3s;
+}
+
+.timeline-item:hover .circle-dot {
+  background-color: var(--hover-color);
+}
+
+.timeline-title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-text {
+  font-size: 0.813rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-date {
+  display: flex;
+  align-items: center;
+  column-gap: 0.4rem;
+  font-size: 0.875rem;
+  color: var(--hover-color);
+}
+
+@media screen and (max-width: 1024px) {
+  .qualification-container {
+    grid-template-columns: repeat(2, 290px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .qualification-container {
+    grid-template-columns: 290px;
+    row-gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+ .qualification-container {
+    grid-template-columns: 1fr;
+  }
+  }
+
+/* QUALIFICATION SECTION END HERE ===========  */
 
 /* ======== SERVICES SECTION START HERE =========  */
 .main-text {
