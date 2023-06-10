@@ -12,8 +12,8 @@
 
 :root {
   --text-color: white;
-  --hover-color: #00ABE4;
-  --bg-color: #01257D;
+  --hover-color: #00abe4;
+  --bg-color: #01257d;
   --second-bg-color: #635050;
   --bg-font: 2.5rem;
   --normal-font: 2rem;
@@ -84,7 +84,7 @@ header span {
   font-weight: 600;
   padding: 10px 20px;
   animation: slideAnimation 1s ease forwards;
-  animation-delay: calc(.3s * var(--i));
+  animation-delay: calc(0.3s * var(--i));
   opacity: 0;
 }
 
@@ -499,7 +499,7 @@ section {
 }
 
 .service-box ul {
-color: var(--text-color);
+  color: var(--text-color);
 }
 
 /* =========== learn more =======  */
@@ -511,10 +511,9 @@ color: var(--text-color);
   display: none;
 }
 
-.content  {
-text-align: justify;
+.content {
+  text-align: justify;
 }
-
 
 .learn-more {
   display: block;
@@ -534,7 +533,7 @@ text-align: justify;
 }
 
 #check:checked ~ .learn-more::after {
-  content: "Show Less";
+  content: 'Show Less';
   display: block;
   visibility: visible;
 }
@@ -548,11 +547,8 @@ text-align: justify;
 
 .about-subtitle {
   font-size: var(--smaller-font-size);
-} */
-
-
-
-.service-box p {
+}
+*/ .service-box p {
   margin: 0.5rem 0 1.5rem 0;
   font-weight: 300;
   letter-spacing: 1px;
@@ -777,13 +773,13 @@ text-align: justify;
 
 @keyframes slideAnimation {
   0% {
-   opacity: 0;
-   transform: translateY(100px);
+    opacity: 0;
+    transform: translateY(100px);
   }
 
   100% {
     opacity: 1;
-   transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -1090,8 +1086,10 @@ footer a i {
     width: 300px;
   }
 
-  .info-about1,.info-about2,.info-about3 {
-  display: none;
+  .info-about1,
+  .info-about2,
+  .info-about3 {
+    display: none;
   }
 
   .img-about p {
@@ -1102,7 +1100,7 @@ footer a i {
 /* ================= parallax =========== */
 .scroll-scale {
   opacity: 0;
-  transform: scale(.9);
+  transform: scale(0.9);
   transition: all 2s;
 }
 
