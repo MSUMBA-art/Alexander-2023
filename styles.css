@@ -220,7 +220,7 @@ section {
 }
 
 .btn:hover {
-  color: var(--hover-color);
+  /* color: var(--hover-color); */
 }
 
 .btn::before {
@@ -228,7 +228,7 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  background: var(--bg-color);
+  /* background: var(--hover-color); */
   width: 0;
   height: 100%;
   z-index: 1;
@@ -239,14 +239,14 @@ section {
   width: 100%;
 }
 .btn:nth-child(2) {
-  background-color: var(--bg-color);
+  background-color: var(--second-bg-color);
 }
 
 .btn:nth-child(2):hover {
-  color: var(--bg-color);
+  color: var(--hover-color);
 }
 
-.btn:nth-child(2)::before {
+.btn:nth-child(2)::after {
   background: var(--hover-color);
 }
 
